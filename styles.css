@@ -1,0 +1,388 @@
+/* 文字フォント */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p');
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全体の設定 */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url(./image/background-image.jpg);
+    /* 背景画像 */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Cherry Swash', cursive;
+}
+
+.logo a {
+    text-decoration: none;
+    /* 下線を消す */
+    color: #fff;
+    /* ロゴの文字色を白に設定 */
+}
+
+/* リンクのデフォルトスタイルを変更 */
+a {
+    text-decoration: none;
+    /* 全てのリンクの下線を削除 */
+    color: inherit;
+    /* テキストの色を継承 */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Kosugi', sans-serif;
+}
+
+/* メインビジュアル */
+.hero {
+    background-image: url('./image/top/restaurant.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* セクション */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Kosugi', sans-serif;
+}
+
+.section h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.section h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #666;
+    margin: 17px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+}
+
+.business-hours {
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    padding: 15px
+}
+
+.copyright {
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+}
+
+/* 店内 */
+.tennai img {
+    width: 600px;
+    height: auto;
+}
+
+/* ボタンのサイズ設定 */
+input[type="button"] {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+/* ホバー時のスタイル */
+input[type="button"]:hover {
+    background-color: #ff4500;
+}
+
+/* TOPページの画像 */
+/* メニュー */
+.menu img {
+    width: 500px;
+    height: auto;
+}
+
+.ko-su img {
+    width: 600px;
+    height: auto;
+}
+
+.drink img {
+    width: 600px;
+    height: auto;
+}
+
+/* デリバリー */
+.delivery img {
+    width: 600px;
+    height: auto;
+}
+
+/* 予約 */
+.reservation img {
+    width: 600px;
+    height: auto;
+}
+
+/* MENUページの画像 */
+.cooking img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 単品メニュー */
+.single-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.single-item div {
+    text-align: center;
+}
+
+.single-item img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.single-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* コースメニュー */
+.course-menu img {
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.course-menu p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* ドリンクメニュー*/
+.drink-menu {
+    display: grid;
+    /* グリッドレイアウトを使用 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 2列構成 */
+    gap: 20px;
+    /* 各画像間の間隔 */
+    justify-content: center;
+    padding: 20px;
+}
+
+.drink-menu div {
+    text-align: center;
+}
+
+.drink-menu img {
+    width: 120px;
+    height: auto;
+}
+
+.drink-menu p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 店内イメージセクション */
+#store-image {
+    text-align: center;
+    /* セクション全体の中央揃え */
+    margin: 20px auto;
+    /* 上下余白を追加 */
+    padding: 20px;
+    /* 内側の余白 */
+    max-width: 80%;
+    /* 最大幅を設定 */
+    background-color: #fff;
+    /* 背景を白に */
+    border-radius: 10px;
+    /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 軽い影を追加 */
+}
+
+/* 店内イメージの画像 */
+#store-image img {
+    width: 100%;
+    /* 画像をセクション幅に合わせる */
+    height: auto;
+    /* アスペクト比を維持 */
+    border-radius: 10px;
+    /* 画像の角も丸くする */
+}
+
+
+
+
+/* 店内情報セクション */
+#about {
+    width: 80%;
+    /* セクション全体の幅を画面幅に対して設定 */
+    max-width: 800px;
+    /* 最大幅を設定 */
+    margin: 20px auto;
+    /* セクションを中央揃え */
+    padding: 20px;
+    /* 内側の余白を設定 */
+    background-color: #fff;
+    /* 白い背景を追加 */
+    border-radius: 10px;
+    /* 背景の角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 背景に影を追加 */
+    text-align: center;
+    /* テキスト中央揃え */
+}
+
+/* 店内情報の見出し */
+
+
+/* 店内情報リスト */
+#about ul {
+    list-style: none;
+    /* 点を削除 */
+    padding: 0;
+    /* 内側の余白を削除 */
+    margin: 0;
+}
+
+#about li {
+    font-size: 18px;
+    /* リスト項目のフォントサイズ */
+    color: #555;
+    /* リストの文字色 */
+    margin: 10px 0;
+    /* 各項目に間隔 */
+}
+
+/* 埋め込み地図セクション */
+#map {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* 地図のレスポンシブ対応 */
+.map-container {
+    position: relative;
+    width: 100%;            /* 幅をコンテナ全体に合わせる */
+    padding-top: 56.25%;    /* 16:9のアスペクト比を維持 */
+    margin: 20px 0;         /* 上下に余白 */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;            /* コンテナ幅に合わせる */
+    height: 100%;           /* コンテナ高さに合わせる */
+    border: 0;              /* 枠線を非表示 */
+}
+
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibuya Modern Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="topページ.html">
+                    Shibuya Modern
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="店内情報.html">店内情報</a></li>
+                    <li><a href="menuページ.html">メニュー</a></li>
+                    <li><a href="#delivery">デリバリー</a></li>
+                    <li><a href="#reservation">ご予約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>渋谷でリーズナブルに楽しむおしゃれなレストラン</h2>
+            <p>若者のためのモダンで楽しいダイニング体験を。</p>
+            <a href="menuページ.html" class="button">メニューを見る</a>
+        </div>
+    </section>
+
+    <!-- 店内情報セクション -->
+    <section id="about" class="section">
+        <h2>店内情報</h2>
+        <h3>おしゃれなインテリアで特別なひと時を。</h3>
+        <div class="tennai">
+            <a href="店内情報.html">
+                <img src="./image/top/tennai.jpg" class="tennai" alt="店内画像">
+            </a>
+        </div>
+        <p>渋谷の中心で、スタイリッシュな空間をご提供しています。</p>
+        <input type="button" onclick="location.href='店内情報.html'" value="店内情報">
+    </section>
+
+    <!-- メニューセクション -->
+    <section id="menu" class="section">
+        <h2>メニュー</h2>
+        <h3>リーズナブルで見た目も楽しめるお料理。</h3>
+        <a href="menuページ.html">
+            <img src="./image/common/メニュー表.jpg" class="menu" alt="メニュー画像">
+        </a>
+        <p>Lunch Time: 11:30 ~ 15:00 (L.O: 14:30)</p>
+        <div class="menu-items">
+            <div class="ko-su">
+                <a href="コースメニュー.html">
+                    <img src="./image/common/ko-su.jpg" class="ko-su" alt="コースメニュー画像"><br>
+                    <input type="button" value="コースメニュー">
+                </a>
+            </div>
+            <div class="drink">
+                <a href="ドリンクメニュー.html">
+                    <img src="./image/common/drink.jpg" class="drink" alt="ドリンクメニュー画像"><br>
+                    <input type="button" value="ドリンクメニュー">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- デリバリーセクション -->
+    <section id="delivery" class="section">
+        <h2>デリバリー</h2>
+        <h3>家でもレストランの味を楽しめます！</h3>
+        <div class="delivery">
+            <a href="delivery.html">
+                <img src="./image/top/delivery.jpg" class="delivery" alt="デリバリー画像">
+            </a>
+        </div>
+        <p>お店の味を自宅でも楽しめます！デリバリーオプションも充実。</p>
+        <input type="button" onclick="location.href='delivery.html'" value="デリバリーする">
+    </section>
+
+    <!-- 予約セクション -->
+    <section id="reservation" class="section">
+        <h2>予約</h2>
+        <h3>ご希望の日にちを簡単に予約！</h3>
+        <div class="reservation">
+            <a href="reservation.html">
+                <img src="./image/top/reservation.jpg" class="reservation" alt="予約画像">
+            </a>
+        </div>
+        <p>お席のご予約はこちらから承ります。ご来店をお待ちしております。</p>
+        <input type="button" onclick="location.href='reservation.html'" value="予約する">
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div>
+            <p class="business-hours">
+                Lunch Time / 11:30 ~ 15:00 (L . O / 14:30)<br>
+                Dinner Time / 17:00 ~ 22:00 (L . O / 21:30)<br>
+                Close / 火曜日<br>
+                TELL / ×××× - ×××× - ××××<br>
+                Adress / 〒×××-×××× 東京都渋谷区恵比寿××××-××
+            </p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Shibuya Modern Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
